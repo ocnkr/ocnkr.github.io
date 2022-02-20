@@ -12,6 +12,6 @@ I am currently a research assistant advised by Abhinav Bhatele in Parallel Softw
 and Systems Group (PSSG). Before starting my PhD at UMD, I was an undergraduate student 
 working as an undergraduate research assistant advised by Adnan Ozsoy at Hacettepe University.
 
-My research focuses on high-performance computing and I am currently working on parallel 
-performance analysis tools. Before that, I worked on parallelization of string-matching 
-algorithms using Nvidia GPUs.
+My research focuses on high-performance computing. Specifically, I am working on performance 
+analysis of parallel applications and HPC systems. Before that, I worked on parallelization 
+of string-matching algorithms using Nvidia GPUs.
