@@ -16,4 +16,4 @@ My research focuses on high-performance computing. Specifically, I am working on
 analysis of parallel applications and HPC systems. Before that, I worked on parallelization 
 of string-matching algorithms using Nvidia GPUs.
 
-Curriculum Vitae: [PDF](http://academicpages.github.io/files/OnurCankurCV.pdf)
+Curriculum Vitae: [PDF](https://ocnkr.github.io/files/OnurCankurCV.pdf)
