@@ -1,19 +1,10 @@
 ---
+layout: home
+title: About
 permalink: /
-title: "About me"
-excerpt: "About me"
-author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
-I am a PhD student in computer science at the University of Maryland, College Park. 
-I am currently a research assistant advised by Abhinav Bhatele in Parallel Software 
-and Systems Group (PSSG). Before starting my PhD at UMD, I was an undergraduate student 
-working as an undergraduate research assistant advised by Adnan Ozsoy at Hacettepe University.
 
-My research focuses on high-performance computing. Specifically, I am working on performance 
-analysis of parallel applications and HPC systems. Before that, I worked on parallelization 
-of string-matching algorithms using Nvidia GPUs.
-
-Curriculum Vitae: [PDF](https://ocnkr.github.io/files/OnurCankurCV.pdf)
+My research focuses on **performance analysis, operational data analytics, GPU systems, and energy-efficient computing**. I also explore how large language models can support performance diagnosis. I received my Ph.D. in Computer Science from the University of Maryland, College Park, where I studied code-level performance analysis, system telemetry, run-to-run performance variability, and predictive modeling.

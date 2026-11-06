@@ -1,0 +1,26 @@
+<div class="software-grid">
+  {% assign projects = site.projects | sort: 'order' %}
+  {% for project in projects %}
+    {% if include.selected != true or project.selected %}
+      <article class="software-item">
+        <div class="software-heading">
+          <span class="eyebrow">{{ project.kind }}</span>
+          <span class="project-role">{{ project.role | default: 'Contributor' }}</span>
+        </div>
+        <h3>
+          <a href="{{ project.url | relative_url }}">
+            {{- project.title -}}
+            <span class="inline-arrow" aria-hidden="true">↗</span></a
+          >
+        </h3>
+        <p>{{ project.description }}</p>
+        <div class="text-links">
+          <a href="{{ project.source }}">Source code <span aria-hidden="true">↗</span></a>
+          {% if project.documentation -%}
+            <a href="{{ project.documentation }}">Documentation <span aria-hidden="true">↗</span></a>
+          {%- endif %}
+        </div>
+      </article>
+    {% endif %}
+  {% endfor %}
+</div>

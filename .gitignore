@@ -1,2 +1,13 @@
 _site/
+.bundle/
+.cache/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+vendor/
+node_modules/
+test-results/
+playwright-report/
+.DS_Store
+al-folio-upgrade-report.md
 

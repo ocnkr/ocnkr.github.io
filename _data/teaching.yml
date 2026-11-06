@@ -1,0 +1,26 @@
+- code: UHPC
+  title: Introduction to HPC Systems
+  institution: IT4Innovations, VŠB–Technical University of Ostrava
+  period: "2026"
+  role: Course instructor
+  description: Responsible for the full semester of lectures and laboratory sessions, including course preparation, teaching materials, assignments, and assessment.
+- code: CMSC216
+  title: Introduction to Computer Systems
+  institution: University of Maryland, College Park
+  role: Teaching and instructional support
+  description: 28 hours of teaching, along with grading and exam proctoring.
+- code: CMSC416
+  title: Introduction to Parallel Computing
+  institution: University of Maryland, College Park
+  role: Instructional support
+  description: Grading, exam proctoring, and review of assessment materials.
+- code: CMSC616
+  title: Foundations of Parallel Computing
+  institution: University of Maryland, College Park
+  role: Instructional support
+  description: Grading, exam proctoring, and review of assessment materials.
+- code: CMSC131
+  title: Object-Oriented Programming I
+  institution: University of Maryland, College Park
+  role: Instructional support
+  description: Grading and general instructional support.

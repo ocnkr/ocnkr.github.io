@@ -1,0 +1,40 @@
+- id: telemetry
+  number: "01"
+  title: System telemetry and operational data analytics
+  short_title: Operational data analytics
+  question: How can system telemetry inform better operational decisions?
+  summary: Using GPU, network, and system telemetry to understand workloads, resource use, and performance variability, and inform operational decisions.
+  description: >-
+    I analyze telemetry from production supercomputers to understand system and workload behavior and support operational decision-making. My work connects GPU hardware counters and network and system measurements with job-level information to study resource utilization, performance variability, and energy use. I am interested in operational data analytics that turns these measurements into evidence for decisions about how HPC resources are used and managed.
+  link: /publications/#cankur2026telemetry
+  link_label: GPU workload study · IPDPS 2026
+  story_url: /research/gpu-workload-telemetry/
+  story_label: Production GPU workloads through system telemetry
+- id: analysis
+  number: "02"
+  title: Making performance analysis programmable
+  short_title: Performance analysis
+  question: How can we make complex performance data easier to explore?
+  summary: Reproducible, programmatic workflows for analyzing application profiles and execution traces with Hatchet and Pipit.
+  description: >-
+    I develop and contribute to tools that make performance data easier to manipulate, compare, and interpret. This includes evaluating profiling tools, automating common analyses of calling-context data, and analyzing parallel execution traces through Python-based interfaces.
+  link: /software/
+  link_label: Explore the software
+  story_url: /research/code-level-performance-analysis/
+  story_label: From profiling tools to programmatic analysis
+- id: efficiency
+  number: "03"
+  title: Energy-efficient computing
+  short_title: Energy-efficient computing
+  question: How can systems adapt to changing workloads to use less energy?
+  summary: Studying how CPU and GPU settings can adapt to changing workloads to reduce energy use while limiting performance loss.
+  description: >-
+    I study how CPU and GPU settings can adapt to changes in workload behavior during execution. This includes using runtime measurements and predictions to choose clock frequencies and power limits that reduce energy use while limiting performance loss. I am interested in how these approaches work across different workloads and hardware, and in keeping monitoring and control overhead low.
+- id: llm-diagnosis
+  number: "04"
+  title: LLM-assisted performance diagnosis
+  short_title: LLM-assisted diagnosis
+  question: How can language models help explain performance problems using measured evidence?
+  summary: Exploring how large language models can interpret performance data, identify likely bottlenecks, and support evidence-based diagnosis of parallel applications.
+  description: >-
+    I am interested in using large language models to help diagnose performance problems in parallel applications. This direction explores how models can interpret profiles, execution traces, and system telemetry, connect observations to likely bottlenecks, and suggest follow-up analyses. My focus is on grounding explanations in measured evidence and evaluating whether they help researchers investigate and improve application performance.

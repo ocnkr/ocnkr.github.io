@@ -1,0 +1,75 @@
+---
+layout: default
+---
+{% assign profile = site.data.profile %}
+<section class="profile-intro" aria-labelledby="profile-name">
+  <div class="profile-copy">
+    <p class="eyebrow">High-performance computing & AI</p>
+    <h1 id="profile-name">Onur Cankur</h1>
+    <p class="profile-role">
+      {{ profile.role }} · <a href="{{ profile.institution_url }}">{{ profile.institution }}</a>
+    </p>
+    <p class="profile-university">{{ profile.university }}</p>
+    <p class="profile-lead">{{ profile.intro }}</p>
+    <div class="profile-links" aria-label="Contact and profiles">
+      <a href="mailto:{{ profile.email }}">Email <span aria-hidden="true">↗</span></a>
+      <a href="{{ profile.scholar_url }}">Google Scholar <span aria-hidden="true">↗</span></a>
+      <a href="{{ profile.github_url }}">GitHub <span aria-hidden="true">↗</span></a>
+      <a href="{{ profile.linkedin_url }}">LinkedIn <span aria-hidden="true">↗</span></a>
+      <a href="{{ profile.cv_url | relative_url }}">CV <span class="file-type">PDF</span></a>
+    </div>
+  </div>
+  <figure class="profile-photo">
+    <img src="{{ '/assets/img/onur-cankur.png' | relative_url }}" width="250" height="250" alt="Portrait of Onur Cankur" fetchpriority="high">
+  </figure>
+</section>
+
+<div class="about-summary prose">
+  {{ content }}
+</div>
+
+<section class="home-section news-section" aria-labelledby="recent-updates">
+  <div class="section-heading">
+    <h2 id="recent-updates">Recent updates</h2>
+    <a class="section-link" href="{{ '/news/' | relative_url }}">View all updates <span aria-hidden="true">↗</span></a>
+  </div>
+  {% assign news = site.news | sort: 'date' | reverse %}
+  {% include news-list.liquid items=news limit=3 %}
+</section>
+
+<section class="home-section" aria-labelledby="research-directions">
+  <div class="section-heading">
+    <h2 id="research-directions">Research directions</h2>
+    <a class="section-link" href="{{ '/research/' | relative_url }}">Explore my research <span aria-hidden="true">↗</span></a>
+  </div>
+  <div class="research-grid">
+    {% for topic in site.data.research %}
+      <article class="research-brief">
+        <span class="topic-number" aria-hidden="true">{{ topic.number }}</span>
+        <h3>
+          <a href="{{ '/research/' | append: '#' | append: topic.id | relative_url }}">{{ topic.short_title }}</a>
+        </h3>
+        <p>{{ topic.summary }}</p>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="home-section" aria-labelledby="selected-publications">
+  <div class="section-heading">
+    <h2 id="selected-publications">Selected publications</h2>
+    <a class="section-link" href="{{ '/publications/' | relative_url }}">All publications <span aria-hidden="true">↗</span></a>
+  </div>
+  <div class="publications selected-publications">
+    {% bibliography --group_by none --query @*[selected=true]* %}
+  </div>
+</section>
+
+<section class="home-section" aria-labelledby="research-software">
+  <div class="section-heading">
+    <h2 id="research-software">Selected software</h2>
+    <a class="section-link" href="{{ '/software/' | relative_url }}">All software <span aria-hidden="true">↗</span></a>
+  </div>
+  <p class="section-intro">My software work includes developing and maintaining open-source tools for analyzing parallel application performance.</p>
+  {% include software-list.liquid selected=true %}
+</section>

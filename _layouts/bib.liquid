@@ -1,0 +1,83 @@
+---
+---
+<article
+  class="publication-entry"
+  id="{{ entry.key }}"
+  data-publication
+  data-category="{{ entry.category | escape }}"
+  data-year="{{ entry.year | escape }}"
+>
+  <div class="publication-meta">
+    <span class="publication-category">{{ entry.category }}</span>
+    {% if entry.abbr -%}
+      <span>{{ entry.abbr }}</span>
+    {%- endif %}
+    <span>{{ entry.year }}</span>
+  </div>
+  <h3 class="publication-title">
+    {% if entry.doi %}
+      <a href="https://doi.org/{{ entry.doi }}">{{ entry.title }}</a>
+    {% elsif entry.html %}
+      <a href="{{ entry.html }}">{{ entry.title }}</a>
+    {% else %}
+      {{ entry.title }}
+    {% endif %}
+  </h3>
+  <p class="publication-authors">
+    {%- for author in entry.author_array -%}
+      {% unless forloop.first %}, {% endunless %}
+      {%- if author.last == 'Cankur' -%}
+        <strong>
+          {{- author.first }}
+          {{ author.last -}}
+        </strong>
+      {%- else -%}
+        {{ author.first }}
+        {{ author.last }}
+      {%- endif -%}
+    {%- endfor -%}
+  </p>
+  <p class="publication-venue">
+    {%- if entry.journal -%}
+      {{ entry.journal }}
+    {%- elsif entry.booktitle -%}
+      {{ entry.booktitle }}
+    {%- else -%}
+      {{ entry.publisher }}
+    {%- endif -%}
+    {%- if entry.volume %}, {{ entry.volume }}{% endif -%}
+    {%- if entry.number %}({{ entry.number }}){% endif -%}
+    {%- if entry.pages %}, pp. {{ entry.pages | replace: '--', '–' }}{% endif -%}
+    .
+  </p>
+  {% if entry.summary %}
+    <p class="publication-summary">{{ entry.summary }}</p>
+  {% endif %}
+  <div class="publication-actions">
+    {% if entry.pdf -%}
+      <a href="{{ entry.pdf }}">PDF <span aria-hidden="true">↗</span></a>
+    {%- endif %}
+    {% if entry.doi -%}
+      <a href="https://doi.org/{{ entry.doi }}">DOI <span aria-hidden="true">↗</span></a>
+    {%- endif %}
+    {% if entry.html and entry.doi == null and entry.category != 'Poster' -%}
+      <a href="{{ entry.html }}">Paper <span aria-hidden="true">↗</span></a>
+    {%- endif %}
+    {% if entry.code -%}
+      <a href="{{ entry.code }}">Code <span aria-hidden="true">↗</span></a>
+    {%- endif %}
+    {% if entry.poster -%}
+      <a href="{{ entry.poster }}">Poster <span aria-hidden="true">↗</span></a>
+    {%- endif %}
+    {% if entry.slides -%}
+      <a href="{{ entry.slides }}">Slides <span aria-hidden="true">↗</span></a>
+    {%- endif %}
+    <details class="citation-details">
+      <summary>BibTeX</summary>
+      <div class="citation-content">
+        <button class="copy-citation" type="button" aria-label="Copy BibTeX for {{ entry.title | escape }}">Copy citation</button>
+        <pre><code>{{ entry.bibtex | hideCustomBibtex | escape }}</code></pre>
+      </div>
+    </details>
+  </div>
+</article>

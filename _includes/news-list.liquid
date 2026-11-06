@@ -1,0 +1,9 @@
+{% assign news_limit = include.limit | default: include.items.size %}
+<div class="news-list">
+  {% for item in include.items limit: news_limit %}
+    <div class="news-item">
+      <time datetime="{{ item.date | date: '%Y-%m' }}">{{ item.date | date: '%b %Y' }}</time>
+      <div>{{ item.content | markdownify }}</div>
+    </div>
+  {% endfor %}
+</div>

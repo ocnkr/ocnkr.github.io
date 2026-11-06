@@ -1,0 +1,17 @@
+name: Onur Cankur
+role: Postdoctoral Researcher
+institution: IT4Innovations
+institution_url: https://www.it4i.cz/en/research/research-laboratories/infrastructure-research-lab
+university: VŠB–Technical University of Ostrava
+email: onur.cankur@vsb.cz
+orcid: 0000-0001-7021-3157
+scholar_url: https://scholar.google.com/citations?user=HvUSfd0AAAAJ
+github_url: https://github.com/ocnkr
+linkedin_url: https://www.linkedin.com/in/onurcankur/
+cv_url: /files/OnurCankurCV.pdf
+intro: >-
+  I use system measurements and predictive modeling to understand high-performance computing systems and workloads, improve performance and energy efficiency, and inform operational decisions.
+short_bio: >-
+  My research focuses on performance analysis, operational data analytics, GPU systems, and energy-efficient computing. I also explore how large language models can support performance diagnosis.
+bio: >-
+  Dr. Onur Cankur is a postdoctoral researcher at IT4Innovations, VŠB–Technical University of Ostrava. His research interests span high-performance computing and AI, with a focus on performance analysis, operational data analytics, GPU systems, and energy-efficient computing. He studies how runtime hardware settings can adapt to workload behavior to reduce energy use, and also explores how large language models can support performance diagnosis. He received his Ph.D. in Computer Science from the University of Maryland, College Park, where he studied code-level performance analysis, large-scale supercomputer telemetry, run-to-run performance variability, and predictive modeling using GPU, network, and system-level measurements. He has collaborated with researchers at Lawrence Berkeley National Laboratory and Pacific Northwest National Laboratory. He also contributes to open-source software for analyzing the performance of parallel applications, including Hatchet and Pipit. Earlier, at Hacettepe University, he worked on GPU-accelerated string-matching algorithms and distributed data storage using blockchain.

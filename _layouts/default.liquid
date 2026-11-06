@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+  <head>
+    {% include head.liquid %}
+    <link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url | bust_file_cache }}">
+    <script defer src="{{ '/assets/js/academic.js' | relative_url | bust_file_cache }}"></script>
+  </head>
+  <body class="academic-site{% if page.permalink == '/' %} home-page{% endif %}">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    {% include site-header.liquid %}
+    <main id="main-content" class="site-main container" tabindex="-1">
+      {{ content }}
+    </main>
+    {% include site-footer.liquid %}
+  </body>
+</html>

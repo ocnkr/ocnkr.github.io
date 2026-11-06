@@ -1,0 +1,15 @@
+_site/
+.jekyll-cache/
+.bundle/
+.cache/
+vendor/
+node_modules/
+test-results/
+playwright-report/
+images/
+talkmap/
+assets/fonts/
+Gemfile.lock
+package-lock.json
+LICENSE
+LICENSE-al-folio

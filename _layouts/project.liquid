@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<article class="project-page">
+  <a class="back-link" href="{{ '/software/' | relative_url }}"><span aria-hidden="true">←</span> Research software</a>
+  <header class="post-header">
+    <p class="eyebrow">{{ page.kind }} · {{ page.role | default: 'Open-source contributor' }}</p>
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="project-description">{{ page.description }}</p>
+    <div class="text-links project-links">
+      <a href="{{ page.source }}">Source code <span aria-hidden="true">↗</span></a>
+      {% if page.documentation -%}
+        <a href="{{ page.documentation }}">Documentation <span aria-hidden="true">↗</span></a>
+      {%- endif %}
+      <a href="{{ page.paper }}">Related paper <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+  <div class="prose">{{ content }}</div>
+</article>

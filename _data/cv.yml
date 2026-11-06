@@ -1,0 +1,96 @@
+cv:
+  name: Onur Cankur
+  label: Postdoctoral Researcher
+  email: onur.cankur@vsb.cz
+  location: Ostrava, Czechia
+  website: https://ocnkr.github.io
+  summary: >-
+    Research in high-performance computing and AI, with a focus on performance analysis,
+    operational data analytics, large-scale system telemetry, GPU behavior, energy-efficient computing,
+    and LLM-assisted performance diagnosis.
+  sections:
+    Education:
+      - institution: University of Maryland, College Park
+        location: Maryland, USA
+        studyType: Ph.D.
+        area: Computer Science
+        start_date: "2020-08"
+        end_date: "2026-05"
+        highlights:
+          - "Dissertation: Longitudinal Data Analytics of HPC Systems and Applications."
+          - "Advisor: Abhinav Bhatele."
+      - institution: Hacettepe University
+        location: Ankara, Türkiye
+        studyType: B.Sc.
+        area: Computer Science
+        start_date: "2015-08"
+        end_date: "2020-07"
+        highlights:
+          - Graduated with the fourth-highest GPA.
+    Experience:
+      - company: IT4Innovations National Supercomputing Center
+        position: Postdoctoral Researcher
+        location: VŠB–Technical University of Ostrava, Czechia
+        start_date: "2026-07"
+        end_date: present
+        summary: Extending research toward European HPC systems and runtime energy optimization.
+      - company: University of Maryland, College Park
+        position: Graduate Assistant
+        location: Maryland, USA
+        start_date: "2021-01"
+        end_date: "2026-05"
+        summary: Conducted research, supported teaching, and mentored six undergraduate students in research projects.
+      - company: Lawrence Berkeley National Laboratory
+        position: Ph.D. Intern
+        location: Berkeley, California, USA
+        start_date: "2023-05"
+        end_date: "2023-08"
+        summary: Developed models to predict run-to-run performance variability and analyzed resource utilization on NERSC’s Perlmutter supercomputer.
+      - company: Pacific Northwest National Laboratory
+        position: Ph.D. Intern
+        location: USA
+        start_date: "2022-06"
+        end_date: "2022-08"
+        summary: Analyzed program memory traces collected with MemGaze.
+      - company: ASELSAN
+        position: Part-time Software Engineer
+        location: Türkiye
+        start_date: "2019-12"
+        end_date: "2020-06"
+      - company: Hacettepe University
+        position: Undergraduate Research Assistant
+        location: Ankara, Türkiye
+        start_date: "2018-10"
+        end_date: "2019-12"
+        summary: Parallelized around 20 string-matching algorithms using GPGPU accelerators and studied big-data frameworks and blockchain-based distributed storage.
+      - company: ASELSAN
+        position: Summer Intern
+        location: Türkiye
+        start_date: "2019-07"
+        end_date: "2019-08"
+      - company: Hacettepe University
+        position: Summer Intern
+        location: Ankara, Türkiye
+        start_date: "2018-06"
+        end_date: "2018-08"
+    Awards:
+      - title: Supercomputing Conference Travel Grant
+        date: "2023, 2025"
+        awarder: Supercomputing Conference
+      - title: CS Summer Research Fellowship
+        date: "2020"
+        awarder: University of Maryland, College Park
+      - title: Dean’s Fellowship
+        date: "2020"
+        awarder: University of Maryland, College Park
+      - title: Fourth-highest graduating GPA
+        date: "2020"
+        awarder: Hacettepe University
+      - title: TÜBİTAK Undergraduate Research Scholarship
+        date: "2018–2019"
+        awarder: TÜBİTAK
+    Languages:
+      - name: Turkish
+        summary: Native
+      - name: English
+        summary: Fluent

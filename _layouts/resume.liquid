@@ -1,0 +1,118 @@
+---
+layout: default
+---
+{% assign cv = site.data.cv.cv %}
+<article class="resume-page">
+  <header class="post-header resume-header">
+    <div>
+      <h1 class="post-title">Curriculum vitae</h1>
+      <p class="post-description">Research, experience, and academic service.</p>
+    </div>
+    <a class="button-primary" href="{{ site.data.profile.cv_url | relative_url }}">Download CV <span class="file-type">PDF</span></a>
+  </header>
+  <div class="resume-intro prose">
+    <p>{{ cv.summary }}</p>
+    <div class="text-links">
+      <a href="mailto:{{ cv.email }}">{{ cv.email }}</a>
+      <a href="{{ site.data.profile.linkedin_url }}">LinkedIn <span aria-hidden="true">↗</span></a>
+      <a href="https://orcid.org/{{ site.data.profile.orcid }}">ORCID <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+  <nav class="section-jump-links" aria-label="CV sections">
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#publications">Publications</a>
+    <a href="#awards">Awards</a>
+    <a href="#teaching-service">Teaching & service</a>
+  </nav>
+
+  <section class="resume-section" id="education">
+    <h2>Education</h2>
+    {% for item in cv.sections.Education %}
+      <div class="timeline-item">
+        <p class="timeline-date">{{ item.start_date | slice: 0, 4 }}–{{ item.end_date | slice: 0, 4 }}</p>
+        <div>
+          <h3>{{ item.studyType }} in {{ item.area }}</h3>
+          <p class="timeline-place">{{ item.institution }}</p>
+          {% for detail in item.highlights %}
+            <p>{{ detail }}</p>
+          {% endfor %}
+        </div>
+      </div>
+    {% endfor %}
+  </section>
+
+  <section class="resume-section" id="experience">
+    <h2>Professional experience</h2>
+    {% for item in cv.sections.Experience %}
+      <div class="timeline-item">
+        <p class="timeline-date">
+          {{ item.start_date | append: '-01' | date: '%b %Y' }}–
+          {%- if item.end_date == 'present' %}present{% else %}{{ item.end_date | append: '-01' | date: '%b %Y' }}{% endif %}
+        </p>
+        <div>
+          <h3>{{ item.position }}</h3>
+          <p class="timeline-place">{{ item.company }}</p>
+          {% if item.summary %}
+            <p>{{ item.summary }}</p>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </section>
+
+  <section class="resume-section prose" id="publications">
+    <h2>Publications & software</h2>
+    <p>
+      My work spans production GPU telemetry, programmatic performance analysis, parallel execution traces, GPU-accelerated string matching, and
+      distributed storage.
+    </p>
+    <div class="text-links">
+      <a href="{{ '/publications/' | relative_url }}">Full publication list <span aria-hidden="true">↗</span></a>
+      <a href="{{ '/software/' | relative_url }}">Research software <span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
+
+  <section class="resume-section" id="awards">
+    <h2>Honors & awards</h2>
+    {% for item in cv.sections.Awards %}
+      <div class="timeline-item">
+        <p class="timeline-date">{{ item.date }}</p>
+        <div>
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.awarder }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </section>
+
+  <section class="resume-section prose" id="teaching-service">
+    <h2>Teaching, mentoring & service</h2>
+    <p>
+      I have taught and supported courses in HPC, parallel computing, computer systems, and programming, and mentored six undergraduate researchers at
+      the University of Maryland.
+    </p>
+    <p>
+      My professional service includes program committees, journal and conference reviewing, workshop organization, and student volunteering at the
+      Supercomputing Conference.
+    </p>
+    <div class="text-links">
+      <a href="{{ '/teaching/' | relative_url }}">Teaching experience <span aria-hidden="true">↗</span></a>
+      <a href="{{ '/service/' | relative_url }}">Professional service <span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
+
+  <section class="resume-section prose">
+    <h2>Languages</h2>
+    <p>
+      {% for item in cv.sections.Languages -%}
+        {{- item.name }} ({{ item.summary | downcase }}){% unless forloop.last %} · {% endunless -%}
+      {%- endfor %}
+    </p>
+  </section>
+
+  <details class="biography-details">
+    <summary>Short biography</summary>
+    <p>{{ site.data.profile.bio }}</p>
+  </details>
+</article>

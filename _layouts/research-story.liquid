@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<article class="research-story">
+  <a class="back-link" href="{{ '/research/' | relative_url }}"><span aria-hidden="true">←</span> All research</a>
+  <header class="post-header">
+    <p class="eyebrow">Research story · {{ page.topic }}</p>
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="page-intro">{{ page.description }}</p>
+  </header>
+  <div class="prose">{{ content }}</div>
+</article>

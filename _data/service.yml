@@ -1,0 +1,45 @@
+- id: program-committees
+  title: Program committees
+  entries:
+    - year: "2027"
+      items:
+        - name: IPDPS
+          url: https://www.ipdps.org/ipdps2027/2027-program-committee.html
+          title: IEEE International Parallel and Distributed Processing Symposium — Measurements, Modeling, and Experiments track
+        - name: SCI
+          url: https://supercomputingindia.org/
+          title: Supercomputing India
+    - year: "2026"
+      items:
+        - name: AgenticAI4HPC
+          url: https://ornl.github.io/events/agenticai4hpc2026/
+    - year: "2022"
+      items:
+        - name: IPDPS
+          url: https://www.ipdps.org/ipdps2022/
+          detail: External reviewer
+    - year: "2021"
+      items:
+        - name: IPDPS
+          url: https://www.ipdps.org/ipdps2021/
+          detail: External reviewer
+- id: journal-reviewing
+  title: Journal reviewing
+  entries:
+    - items:
+        - name: IEEE Transactions on Parallel and Distributed Systems
+    - items:
+        - name: Frontiers in High Performance Computing
+- id: organization
+  title: Organization
+  entries:
+    - year: "2022"
+      items:
+        - name: Charm++ Workshops
+          detail: Submissions co-chair
+- id: student-volunteering
+  title: Student volunteering
+  entries:
+    - year: "2025, 2023, 2022, 2021, 2020"
+      items:
+        - name: Supercomputing Conference (SC)
